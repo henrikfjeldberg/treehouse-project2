@@ -6,9 +6,62 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/styles.css">
-    <link href="https://fonts.googleapis.com/css?family=Muli%7CRoboto:400,300,500,700,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Space+Mono" rel="stylesheet">
   </head>
 
   <body>
+    <div class="main-nav">
+        <ul class="nav">
+          <li class="name">Fjeld & Berg</li>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+
+    <div id="bio">
+      <img class="profileImage" src="images/responsive-layout-profile.png" alt="profile image">
+      <p class="intro">
+        Hi! I´m a graphic designer trying to learn some front-end wizardry. I finished a front-end web development class while on parental leave. Have a look at some of my projects, and dont hesitate to get in touch!
+      </p>
+    </div>
+
+    <div id="portfolio">
+      <h1>Portfolio</h1>
+
+      <div class="project">
+        <img src="images/portfolio-1.png" alt="Marketing page" class="projectImage">
+        <h2>Marketing Page</h2>
+        <p>This project shows the front page of a marketing website meant for a specific business I´m interested in.</p>
+      </div>
+
+      <div class="project">
+        <img src="images/portfolio-2.png" alt="Search page" class="projectImage">
+        <h2>Search Page</h2>
+        <p>This project compares travel times based on different transportation methods and tells you the best one.</p>
+      </div>
+
+      <div class="project">
+        <img src="images/portfolio-3.png" alt="Map of Favorite Spots" class="projectImage">
+        <h2>Map of Favorite Spots</h2>
+        <p>This project uses mappings apis to plot points for my favourite spots in the city for DIY walking tour.</p>
+      </div>
+    </div>
+
+    <div id="contact">
+      <h1>Contact</h1>
+      <p>If you´re interested in chatting or want more information about waht I´ve been working on, I´d love to hear from you!</p>
+      <p>Phone <strong>+1 (111)555-1234</strong></p>
+      <p>Email <strong>email@yoursite.com</strong></p>
+    </div>
+    <footer>
+      <ul class=footerNav">
+        <li class="name">Fjeld & Berg</li>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#">Back To Top</a></li>
+      </ul>
+    </footer>
   </body>
 </html>

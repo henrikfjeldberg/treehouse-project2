@@ -11,7 +11,7 @@ body {
  }
 
 .main-nav {
-  max-width: 95%;
+  max-width: 90%;
   margin: 0 auto;
 }
 
@@ -73,6 +73,18 @@ footer li.nav {
   display: none;
 }
 
+footer li.name {
+  font-size: 1rem;
+  text-align: left;
+  float: left;
+}
+
+footer li.mobile {
+  font-size: 1rem;
+  text-align: right;
+  float: right;
+}
+
 .clearfix:after {
   content: "";
   display: table;
@@ -83,14 +95,10 @@ footer li.nav {
   .main-nav li {
     background-color: transparent;
     display: inline-block;
-    margin: 0.5rem;
-    padding: 0.5rem;
   }
 
   .main-nav li.name {
     display: block;
-    margin: 0.5rem;
-    padding: 0.5rem;
   }
 
   #bio {
@@ -133,10 +141,19 @@ footer li.nav {
     padding-left: 1.5rem;
     display: inline-block;
   }
-
 }
 
 @media (min-width: 1024px) {
+  .main-nav li {
+    display: inline-block;
+    text-align: right;
+    float: right;
+  }
+
+  .main-nav li.name {
+    text-align: left;
+    float: left;
+  }
 
 }
 
@@ -162,6 +179,7 @@ ul {
   text-align: center;
   text-transform: uppercase;
   font-weight: 700;
+  line-height: 1.5rem;
 }
 
 ul a {
@@ -177,17 +195,7 @@ p {
   font-size: 1rem;
 }
 
-footer li.name {
-  font-size: 1rem;
-  text-align: left;
-  float: left;
-}
 
-footer li.mobile {
-  font-size: 1rem;
-  text-align: right;
-  float: right;
-}
 
 @media (min-width: 768px) {
   p.intro {

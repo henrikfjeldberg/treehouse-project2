@@ -69,6 +69,16 @@ footer li {
   display: inline-block;
 }
 
+footer li.nav {
+  display: none;
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 @media (min-width: 768px) {
   .main-nav li {
     background-color: transparent;
@@ -82,6 +92,48 @@ footer li {
     margin: 0.5rem;
     padding: 0.5rem;
   }
+
+  #bio {
+    display: inline-block;
+  }
+
+  #bio .profileImage {
+    float: right;
+    max-width: 40%;
+  }
+
+  #bio p.intro {
+    float: left;
+    max-width: 50%;
+    margin-top: 0;
+  }
+
+  #portfolio {
+    overflow: auto;
+  }
+  .project {
+    max-width: 40%;
+    padding: 0 5%;
+    float: left;
+
+  }
+
+  #contact {
+    padding: 0 10%;
+  }
+
+  footer li.mobile {
+    display: none;
+  }
+
+  footer li.nav {
+    font-size: 1rem;
+    text-align: right;
+    float: right;
+    padding-left: 1.5rem;
+    display: inline-block;
+  }
+
 }
 
 @media (min-width: 1024px) {
@@ -123,10 +175,7 @@ ul li.name {
 
 p {
   font-size: 1rem;
-  text-align: left;
 }
-
-
 
 footer li.name {
   font-size: 1rem;
@@ -140,8 +189,11 @@ footer li.mobile {
   float: right;
 }
 
-footer li.nav {
-  display: none;
+@media (min-width: 768px) {
+  p.intro {
+    text-align: left;
+  }
+
 }
 
 /* Images */

@@ -23,8 +23,69 @@ body {
 }
 
 .main-nav li.name {
-  background-color: rgba(0,0,0,0);
+  background-color: transparent;
   margin-bottom: 1.5rem;
+}
+
+#bio {
+  margin: 0 auto;
+  margin-top: 4.5rem;
+  max-width: 90%;
+}
+
+#portfolio {
+  margin-top: 3rem;
+  padding-top: 1.5rem;
+  padding-bottom: 3rem;
+  background: #fff;
+}
+
+.project {
+  max-width: 90%;
+  margin: 0 auto;
+  margin-top: 3rem;
+}
+
+#contact {
+  margin: 0 auto;
+  max-width: 90%;
+  margin-top: 3rem;
+}
+
+#contact h1 {
+  margin-bottom: 1.5rem;
+}
+
+footer {
+  max-width: 90%;
+  margin: 0 auto;
+  border-top: 1px solid rgba(0,0,0,0.2);
+  margin-top: 3rem;
+  padding-top: 1.5rem;
+  margin-bottom: 6rem;
+}
+
+footer li {
+  display: inline-block;
+}
+
+@media (min-width: 768px) {
+  .main-nav li {
+    background-color: transparent;
+    display: inline-block;
+    margin: 0.5rem;
+    padding: 0.5rem;
+  }
+
+  .main-nav li.name {
+    display: block;
+    margin: 0.5rem;
+    padding: 0.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+
 }
 
 /* Typography */
@@ -34,6 +95,14 @@ body {
   text-align: center;
   color: #030303;
   font-size: 18px;
+}
+
+h1 {
+  font-size: 1.5rem;
+}
+
+h2 {
+  font-size: 1rem;
 }
 
 ul {
@@ -50,4 +119,38 @@ ul a {
 
 ul li.name {
   font-size: 1.5rem;
+}
+
+p {
+  font-size: 1rem;
+  text-align: left;
+}
+
+
+
+footer li.name {
+  font-size: 1rem;
+  text-align: left;
+  float: left;
+}
+
+footer li.mobile {
+  font-size: 1rem;
+  text-align: right;
+  float: right;
+}
+
+footer li.nav {
+  display: none;
+}
+
+/* Images */
+
+.profileImage {
+  width: 60%;
+}
+
+img {
+  max-width: 100%;
+  margin: 0 auto;
 }
